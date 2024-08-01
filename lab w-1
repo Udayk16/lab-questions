@@ -67,3 +67,35 @@ int main(){
 	return 0;
 }
 -----------------------------------------------------------------------------------------
+
+
+#include<stdio.h>
+#include<math.h>
+int main(){
+	int a,b;
+	printf("enter a number");
+	scanf("%d%d",&a,&b);
+	int i;
+	for(i=a;i<b;i++){
+	int temp;
+	int rem=0,sum=0,c=0;
+	int n=i;
+	temp=i;
+	while(n>0){
+		n=n/10;
+		c=c+1;
+	} 
+	n=temp;
+	while(n>0){
+		rem=n%10;
+		sum=sum+pow(rem,c);
+		n=n/10;
+	} 
+	 if(temp==sum){
+	 	printf("%d    ",i);
+	 }
+	  }
+
+	return 0;
+}
+
